@@ -1,3 +1,3 @@
-# L-E-O-C-R-U-Z.github.io
+# llcruz.github.io
 
 Meu Portifolio em frase de desenvolvimento.
