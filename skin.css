@@ -170,3 +170,26 @@ footer a {
     color: #f2f2f2;
     margin-bottom: 80px;
 }
+
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1{
+        position: absolute;
+         left: 50%;
+        top: 0;
+        font-size: 20px;}
+
+    .about img {
+        max-width: 120px;
+        margin-right: 0;
+        margin-bottom: 15px; /* Adiciona margem inferior */
+    }
+
+    .content {
+        width: 70%; /* Mais espaçamento em telas muito pequenas */
+    }
+}
