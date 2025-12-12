@@ -17,7 +17,6 @@ footer {
     max-width: 70%; 
     margin: 40px auto;
     padding: 20px;
-    font-size: 16px;
     margin-bottom: 20px;
 }
 
@@ -73,30 +72,30 @@ footer {
     max-height: 160px;
     object-fit: cover;
     border-radius: 21%;
-    margin: 00px 0;
+    margin: 00px auto;
 }
 
-.img-projeto-card {
+.img-projeto-card, .img-educacao-card, .img-atuacao-card {
     max-width: 100%;
+    height: auto;
+    height: auto;
+    object-fit: cover;
+    display: block;
     margin: 1rem;
-    height: auto;
-    object-fit: cover;
-    display: block;
 }
 
-.img-atuacao-card, .img-educacao-card {
-    max-width: 100%;
-    height: auto;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    object-fit: cover;
-    display: block;
+.img-atuacao-card {
+    padding-bottom: 2rem;
+}
+.img-educacao-card {
+    padding-bottom: 3rem;
 }
 
-.texto-sobre, .ultimo-paragrafo-sobre {
+.texto-sobre p {
     color: #f0f0f0;
     text-align: justify;
-    font-family: cursive;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 16px;
 }
 
 .titulo {
@@ -108,32 +107,26 @@ footer {
     font-family: 'Courier New', Courier, monospace
 }
 
-.card-atuacao, .card-educacao {
-    max-width: 600px; /* ajusta a largura máxima do card */
-    border-radius: 8px;
-    margin: 1rem;
-    overflow: hidden;
-}
-
-.card-projeto-horizontal {
+.card-projeto, .card-atuacao, .card-educacao {
     max-width: 800px; /* ajusta a largura máxima do card */
     border-radius: 8px;
-    margin: 1rem;
+    margin: 1.02rem;
+    overflow: auto;
     background-color: black;
 }
 
-.card-atuacao:hover, .card-educacao:hover, .card-projeto-horizontal:hover{
+.card-atuacao:hover, .card-educacao:hover, .card-projeto:hover{
     transform: scale(1.05);
 }
 
-.card-text-atuacao, .card-text-educacao{
-    color: #f0f0f0;
-    text-align: justify;
-    font-size: 16px;
-    font-family: 'Space Grotesk', sans-serif;
-}
+/* .card-educacao .col-md-4,
+.card-projeto .col-md-4,
+.card-atuacao .col-md-4 {
+    padding-left: 1rem;
 
-.card-text-projeto, p {
+} */
+
+.card-text-atuacao, .card-text-projeto, .card-text-educacao {
     color: #f0f0f0;
     text-align: justify;
     font-size: 16px;
@@ -148,15 +141,10 @@ footer {
     margin-top: 1rem;
 }
 
-.card-text-small-horizontal {
-    margin-left: 1rem;
-    margin-bottom: 0;
-    font-family: 'Space Grotesk', sans-serif;
-    color: #f0f0f0;
-}
-
 .card-text-small {
-    margin-bottom: 0;
+    margin-left: 1rem;
+    margin-bottom: 0rem;
+    margin-top: 0px;
     font-family: 'Space Grotesk', sans-serif;
     color: #f0f0f0;
 }
@@ -188,6 +176,13 @@ footer {
     transition: all 300ms ease-in-out;
 }
 
+.card-skill i {
+    color: white;
+    margin-top: 9px;
+    font-size: 30px;
+    text-decoration: none;
+}
+
 .card-skill img {
     max-width: 40px;
     height: auto;
@@ -205,7 +200,6 @@ footer {
     box-shadow: rgba(56, 136, 240, 0.24) 0px 0px 10px;
     transition: opacity 200ms ease-in-out;
     opacity: 0;
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -235,13 +229,12 @@ footer {
     flex-wrap: wrap;
 }
 
-
 .texto-equipamento h3 {
     font-family: Arial, sans-serif;
     margin: 1rem;
 }
 
-.texto-equipamento a, ul{
+.texto-equipamento a, .texto-equipamento ul{
     font-family: Arial, sans-serif;
     color: #f0f0f0;
     text-decoration: none;
@@ -254,11 +247,52 @@ footer {
     font-size: 16px;
 }
 
+@media all and (min-width: 769px) and (max-width: 1000px) {
+    html {
+        font-size: 58%;
+    }
+
+    .texto-sobre {
+        flex-direction: row;
+        text-align: justify;
+        line-height: 1.5;
+    }
+
+    .texto-sobre p {
+        text-align: justify;
+        font-family: 'Space Grotesk', sans-serif;
+    }
+
+    .img-thumbnail{
+    width: 100%;
+    height: auto;
+    max-width: 180px;
+    object-fit: cover;
+    border-radius: 21%;
+    }
+}
+
 @media (max-width: 767.98px){
 
-    .img-projeto-card {
+   .container-sm {
+        max-width: 100%; 
+        margin: 40px auto;
+        padding: 20px;
+        margin-bottom: 20px;
+    }   
+
+    .img-projeto-card, .img-educacao-card, .img-atuacao-card {
         width: 100%;
         display: block;
         margin: auto;
+        padding: 1rem;
+    }
+
+    .card-projeto, .card-atuacao, .card-educacao {
+    width: 300px;
+    border-radius: 8px;
+    margin: 1.02rem auto;
+    overflow: auto;
+    background-color: black;
     }
 }
