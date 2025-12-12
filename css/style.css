@@ -1,0 +1,264 @@
+/* Estilo do corpo */
+body {
+    margin: 0;
+    padding: 0;
+    background-color:#08070b;
+    height: 100vh;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+footer {
+    background-color:#08070b;
+    color: #ffffff !important;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.container-sm {
+    max-width: 70%; 
+    margin: 40px auto;
+    padding: 20px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.contador-visitas {
+    position: fixed;
+    top: 0px;
+    left: 2px;
+    z-index: 2000;
+}
+
+.contador-visitas img {
+    max-height: 24px;
+}
+
+.icon{
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.icon i {
+    opacity: 0;
+}
+
+.icon:hover i{
+    color: white;
+    opacity: 1;
+    transform: translateY(-2px);
+    font-size: 1rem;
+}
+
+/* Cor de fundo da barra */
+.navbar_cabecalho {
+    background-color: #08070b;
+}
+
+/* Cor dos textos do menu */
+.navbar_cabecalho .navbar-brand,
+.navbar_cabecalho .nav-link {
+    color: #ffffff !important;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* Cor quando passa o mouse em cima */
+.navbar_cabecalho .nav-link:hover {
+    color: #f0f0f0e5 !important;
+}
+
+.img-thumbnail{
+    width: 160px;
+    max-height: 160px;
+    object-fit: cover;
+    border-radius: 21%;
+    margin: 00px 0;
+}
+
+.img-projeto-card {
+    max-width: 100%;
+    margin: 1rem;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+.img-atuacao-card, .img-educacao-card {
+    max-width: 100%;
+    height: auto;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    object-fit: cover;
+    display: block;
+}
+
+.texto-sobre, .ultimo-paragrafo-sobre {
+    color: #f0f0f0;
+    text-align: justify;
+    font-family: cursive;
+}
+
+.titulo {
+    color: #f0f0f0;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: left;
+    margin: 1rem;
+    font-family: 'Courier New', Courier, monospace
+}
+
+.card-atuacao, .card-educacao {
+    max-width: 600px; /* ajusta a largura máxima do card */
+    border-radius: 8px;
+    margin: 1rem;
+    overflow: hidden;
+}
+
+.card-projeto-horizontal {
+    max-width: 800px; /* ajusta a largura máxima do card */
+    border-radius: 8px;
+    margin: 1rem;
+    background-color: black;
+}
+
+.card-atuacao:hover, .card-educacao:hover, .card-projeto-horizontal:hover{
+    transform: scale(1.05);
+}
+
+.card-text-atuacao, .card-text-educacao{
+    color: #f0f0f0;
+    text-align: justify;
+    font-size: 16px;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.card-text-projeto, p {
+    color: #f0f0f0;
+    text-align: justify;
+    font-size: 16px;
+    margin: 1rem;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.card-titulo-atuacao, .card-titulo-educacao, .card-titulo-projeto {
+    color: #f0f0f0;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.card-text-small-horizontal {
+    margin-left: 1rem;
+    margin-bottom: 0;
+    font-family: 'Space Grotesk', sans-serif;
+    color: #f0f0f0;
+}
+
+.card-text-small {
+    margin-bottom: 0;
+    font-family: 'Space Grotesk', sans-serif;
+    color: #f0f0f0;
+}
+
+.skill-titulo {
+    color: #f0f0f0;
+    font-weight: bold;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    margin-top: -1.5rem;
+}
+
+.skills {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    position: relative;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-skill {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 6rem;
+    margin: 1rem 1.3rem;
+    transition: all 300ms ease-in-out;
+}
+
+.card-skill img {
+    max-width: 40px;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+
+.skill-overlay {
+    position: absolute;
+    top: 3rem;
+    padding: 0.1rem 0.1rem;
+    letter-spacing: 0.1rem;
+    border-radius: 10px;
+    background-color: #1a2242;
+    box-shadow: rgba(56, 136, 240, 0.24) 0px 0px 10px;
+    transition: opacity 200ms ease-in-out;
+    opacity: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.skill-text-overlay {
+    color: #f0f0f0;
+    text-align: center;
+    font-family: cursive;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.card-skill:hover {
+    transform: translateY(-5px);
+}
+
+.card-skill:hover .skill-overlay {
+    opacity: 1;
+    z-index: 1;
+}
+
+.aling-skill-mobile {
+    display: flex; /* coloca os ícones lado a lado */
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.texto-equipamento h3 {
+    font-family: Arial, sans-serif;
+    margin: 1rem;
+}
+
+.texto-equipamento a, ul{
+    font-family: Arial, sans-serif;
+    color: #f0f0f0;
+    text-decoration: none;
+
+}
+
+.texto-equipamento span {
+    color: #666666; 
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+@media (max-width: 767.98px){
+
+    .img-projeto-card {
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+}

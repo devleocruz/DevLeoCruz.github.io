@@ -1,230 +1,48 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>llcruz</title>
-    <link rel="stylesheet" href="skin.css">
-</head>
-<body>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>llcruz</title>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    </head>
+    <body>
+        <div class="contador-visitas">
+            <a href="https://hitscounter.dev" target="_blank" rel="noopener noreferrer">
+                <img
+                src="https://hitscounter.dev/api/hit?url=https%3A%2F%2Fdevleocruz.github.io&label=visitas&icon=eye-fill&color=%23ffffff&border=%23000000"
+                alt="Contador de visitas"/>
+            </a>
+        </div>
 
-    <header class="c-fwswud">
-    <nav>
-        <ul>
-            <li>
-                <a href="#" onclick="showTab('sobre')">Sobre</a>
-            </li>
-            <li>
-                <a href="#" onclick="showTab('projetos')">Projetos</a>
-            </li>
-            <li>
-                <a href="#" onclick="showTab('artigos')">Artigos</a>
-            </li>
-            <li>
-                <a href="#" onclick="showTab('equipamentos')">Equipamentos</a>
-            </li>
-        </ul>
-    </nav>
-</header>
-
-<div class="content">
-    <div id="sobre" class="tab active">
-        <h2 class="sobre">.Sobre</h2>
-        <div class="about">
-            <img src="./Arquivos/Foto de perfil.jpg" alt="Foto de Perfil">
-            <div class="text">
-                <p>Olá, sou Leonardo Cruz, um apaixonado por tecnologia com 2 anos e 7 meses de experiência na área de TI. 
-                    Atualmente, atuo como Auxiliar de TI no escritório da Alfa Contabilidade, onde ofereço suporte técnico.
-                </p>
-                <p>
-                    Estou cursando Sistemas de Informação, o que me permite aprofundar meus conhecimentos e habilidades na área.
-                    No momento, estou focado em lógica de programação, matemática e tecnologia blockchain.
-                </p>
-                <p>Como um jovem brasileiro, meu entusiasmo me levou a aprender sobre informática de forma autodidata desde cedo.
-                Quando não estou trabalhando, estou estudando; e quando não estou estudando, estou envolvido em algum projeto paralelo.
-                Também sou apaixonado por jogos, animes, séries, livros, mangás e manhwas.
-                No meu tempo livre, gosto de relaxar assistindo a conteúdos relacionados ou ouvindo música.
-                E, claro, não posso esquecer de mencionar o mais importante: de vez em quando, eu durmo!</p>
-            </div>
-        </div>
-        <h4>💼 Atuação</h4>
-        <div class="project">
-            <div>
-                <h3>Auxiliar de TI</h3>
-                <img src="./Arquivos/Alfa.jpg" alt="Projeto 2">
-                <p>Atualmente, trabalho como Auxiliar de TI na Alfa Contabilidade,
-                    onde sou responsável por oferecer suporte técnico e auxiliar na resolução de problemas relacionados à informática.
-                    Essa experiência tem sido fundamental para o meu desenvolvimento profissional,
-                    permitindo-me aprimorar habilidades técnicas e aprender a lidar com desafios diversos na área de tecnologia.
-                </p>
-                <p style="margin: 0;">
-                    <a href="https://alfacontabilidade.com.br/" target="_blank">Alfa Contabilidade</a>
-                    <span> • Mato Grosso, Brasil</span>
-                </p>
-                <p style="margin: 0;">
-                    <span>Jul 2024</span>
-                    <span> – </span>
-                    <span>Atualmente</span>
-                </p>
-            </div>
-            <div>
-                <h3>Jovem Aprendiz</h3>
-                <img src="./Arquivos/Marfrig.png" alt="Projeto 1">
-                <p>Atuei como Jovem Aprendiz na Marfrig Global Foods de 2022 a 2024, acumulando quase dois anos de experiência.
-                    Durante os primeiros cinco meses, trabalhei no setor de Manutenção.
-                    Nos últimos 16 meses, transitei para o setor de TI,
-                    onde pude desenvolver habilidades técnicas e aprofundar meu entendimento sobre tecnologia da informação em um ambiente corporativo.
-                </p>
-                <p style="margin: 0;">
-                    <a href="https://www.marfrig.com.br/pt" target="_blank">Marfrig Global Foods</a>
-                    <span> • Mato Grosso, Brasil</span>
-                </p>
-                <p style="margin: 0;">
-                    <span>Jan 2022</span>
-                    <span> – </span>
-                    <span>Jul 2024</span>
-                    <span> • </span>
-                    <span>1 ano e 9 meses</span>
-                </p>
-            </div>   
-        </div>
-        <h4>🎓 Educação</h4>
-        <div class="project">
-            <div>
-                <h3>Bacharelado em Sistemas de Informação</h3>
-                <img src="./Arquivos/IFMT.jpg" alt="Educação 1">
-                <p>Atualmente cursando Bacharelado em Sistemas de Informação, com foco em Ciência da Computação, Matemática e Administração,
-                    preparando-me para atuar tanto no desenvolvimento técnico quanto no processo produtivo na área.
-                </p>
-                <li>
-                    <span>Disciplinas Relevantes: Programação de Computadores I e II,
-                    Programação Orientada a Objetos (POO),
-                    Banco de Dados,
-                    Cálculo Diferencial e Integral
-                    e Redes de Computadores.</span>
-                </li>
-                <p style="margin: 10px 0 0 0 ;">
-                    <a href="https://plc.ifmt.edu.br/inicio/" target="_blank">IFMT Campus Pontes e Lacerda</a>
-                    <span> • Mato Grosso, Brasil</span>
-                </p>
-                <p style="margin: 0;">
-                    <span>Jan 2023</span>
-                    <span> – </span>
-                    <span>Atualmente</span>
-                </p>
-            </div>
-        </div>
-    </div>
-
-    <div id="projetos" class="tab">
-        <h2>.Projetos</h2>
-        <div class="project">
-            <div>
-                <h3>Guarda Mirim</h3>
-                <img src="./Arquivos/Guarda mirim.jpg" alt="Projeto 2">
-                <p>Participei do projeto social Guarda-Mirim de Pontes e Lacerda de 2018 a 2019.
-                    Embora não tenha recebido um certificado,
-                    essa experiência foi enriquecedora e me ensinou lições importantes sobre cidadania, trabalho em equipe e responsabilidade social.
-                    A participação no projeto me ajudou a contribuir para a comunidade e desenvolver habilidades que são valiosas em minha trajetória pessoal e profissional.
-                </p>
-                <p style="margin: 0;">
-                    <a href="https://www.facebook.com/guardamirimpl" target="_blank">Guarda-Mirim</a>
-                    <span> • Mato Grosso, Brasil</span>
-                </p>
-                <p style="margin: 0;">
-                    <span>Mar 2018</span>
-                    <span> – </span>
-                    <span>Dez 2019</span>
-                    <span> • </span>
-                    <span>1 ano e 9 meses</span>
-            </div>
-        </div>
-    </div>
-     
-    <div id="artigos" class="tab">
-        <h2>.Artigos</h2>
-        <div class="about">
-            <div class="artigo">
-                <a href="./Arquivos/Protocolos de Camadas de Transporte_ TCP e UDP em Redes de Computadores.pdf" target="_blank">
-                    Protocolos de Camadas de Transporte (TCP e UDP) - 10/2024
-                </a>
-            </div>
-        </div>
-    </div>
-        
-    <div id="equipamentos" class="tab">
-        <h2>.Equipamentos</h2>
-        <div class="about">
-            <div class="equipamento">
-                <p>Esta seção é destinada a mostrar as ferramentas e tecnologias que utilizo no meu dia a dia.</p>
-                <h4>Trabalho</h4>
-                <ul>
-                    <li>
-                        <a href="https://www.kabum.com.br/produto/20868/combo-teclado-e-mouse-com-fio-usb-logitech-mk120-com-design-confortavel-duravel-e-resistente-a-respingos-e-layout-abnt2-920-004429" target="_blank">
-                            Teclado e Mouse com fio USB Logitech MK120
-                        </a>
-                        <span> - </span>
-                        <span>Teclado e mouse usados no trabalho; é da empresa</span>
+        <nav class="navbar navbar-expand-lg navbar_cabecalho">
+        <div class="container">
+            <a class="navbar-brand" href="#" onclick="carregarConteudo('home.html'); return false;">LLCRUZ</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="carregarConteudo('experiencia.html'); return false;">EXPERIÊNCIAS</a>
                     </li>
-                    
-                    <li>
-                        <a href="https://www.amazon.com.br/Notebook-Inspiron-I15-7572-A30S-GeForce-Windows/dp/B07M65J99B" target="_blank">
-                            Notebook Dell Inspiron I15-7572-A30S
-                        </a>
-                        <span> - </span>
-                        <span>128GB de SSD, 16GB de RAM, Intel 8ª Geração, SO Windows 10 Pro; é da empresa</span>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="carregarConteudo('projetos.html'); return false;">PROJETOS</a>
                     </li>
-
-                    <li>
-                        <a href="https://www.amazon.com.br/Notebook-AC166-Multilaser-Acess%C3%B3rios-Notebooks/dp/B0752J5F99/ref=sr_1_8?sr=8-8" target="_blank">
-                            Base de Notebook Multi 
-                        </a>
-                        <span> - </span>
-                        <span>Para maior conforto e ergonomia; é da empresa</span>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="carregarConteudo('equipamentos.html'); return false;">EQUIPAMENTOS</a>
                     </li>
                 </ul>
+            </div>
+        </div>
+        </nav>
 
+        <div id="conteudo"></div>
 
-                <h4>Apps</h4>
-                <ul>
-                    <li>
-                        <a href="https://brave.com/pt-br/" target="_blank">Brave</a>
-                        <span> - </span>
-                        <span>O melhor navegador.</span>
-                    </li>
-                    
-                    <li>
-                        <a href="https://code.visualstudio.com/" target="_blank">VSCode</a>
-                        <span> - </span>
-                        <span>Minha IDE favorita</span>
-                    </li>
-
-                    <li>
-                        <a href="https://www.amazon.com.br/Notebook-AC166-Multilaser-Acess%C3%B3rios-Notebooks/dp/B0752J5F99/ref=sr_1_8?sr=8-8" target="_blank">
-                            Psiphon
-                        </a>
-                        <span> - </span>
-                        <span>Aplicativo VPN que eu uso para acessar conteúdo de outros países.</span>
-                    </li>
-                </ul>
-         </div>            
-    </div>
-</div>
-
-<footer>
-    <a class="link_github" href="https://github.com/DevLeoCruz" target="_blank"><b>GitHub</b></a>
-    <a>contato.leoprota@gmail.com</a>
-</footer>
-
-<script>
-    function showTab(tabId) {
-        const tabs = document.querySelectorAll('.tab');
-        tabs.forEach(tab => {
-            tab.classList.remove('active');
-        });
-        document.getElementById(tabId).classList.add('active');
-    }
-</script>
-
-</body>
+        <script> document.addEventListener('DOMContentLoaded', function() {carregarConteudo('home.html');});</script>
+        <script src="js/bootstrap.bundle.js"></script>
+        <script src="js/funcoes.js"></script>
+    </body>
 </html>
